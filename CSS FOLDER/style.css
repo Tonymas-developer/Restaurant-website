@@ -1,0 +1,599 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  font-size: 65.2%;
+  line-height: 1;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  background-image: linear-gradient(
+      to left,
+      rgba(4, 9, 30, 0.8),
+      rgba(4, 9, 30, 0.8)
+    ),
+    url(../IMAGES/restaurant2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* position: relative; */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d6d3d3;
+  z-index: 100;
+  padding: 0 3.2rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar ul {
+  list-style: none;
+}
+
+.logo {
+  color: #fff;
+}
+
+span {
+  color: #efa000;
+}
+
+.nav-bar ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 2rem 1rem;
+  transition: all 0.4s;
+  letter-spacing: 1px;
+}
+
+.nav-bar ul li:hover {
+  background-image: linear-gradient(
+    to left,
+    rgba(4, 9, 30, 0.3),
+    rgba(4, 9, 30, 0.3)
+  );
+}
+
+.nav-bar ul li:hover a,
+.nav-bar .active {
+  color: #efa000;
+}
+
+/* ************** */
+/* HERO SECTION */
+/* *********** */
+
+.hero-heading {
+  font-size: 6rem;
+  margin-bottom: 3.2rem;
+}
+
+.hero-text {
+  margin-bottom: 3.4rem;
+  font-size: 1.6rem;
+}
+
+.hero-container {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 4.8rem;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+.delivered-imgs {
+  display: flex;
+  align-items: center;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 5px;
+}
+
+.btn:hover .fa-arrow-right {
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 20px #2e415f;
+}
+
+.btn::after {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background-color: #2e415f;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.4);
+  opacity: 0.5;
+}
+
+.btn:hover .fa-arrow-right {
+  transform: translateX(10px);
+}
+
+/* ABOUT SECTION */
+.about-container img {
+  width: 400px;
+  height: 400px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FEATURE SECTION */
+.features {
+  display: flex;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 30px 0;
+}
+
+.box {
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.box i {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.fa-hotel,
+.fa-dumbbell {
+  color: #203351;
+  background-color: #efa000;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f09b46;
+  color: #333;
+}
+
+.fa-utensils {
+  background-color: #203351;
+  color: #efa000;
+}
+
+.features h3 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.features p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+/* ********************* */
+/* MEALS SECTION */
+/* *********************** */
+.meal-section {
+  padding: 4rem 3.2rem;
+}
+
+.meal-section .meal-heading {
+  text-align: center;
+  margin-bottom: 2.4rem;
+  font-size: 3rem;
+}
+
+.meal-container {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal-container:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+
+.meal-content {
+  padding: 3.2rem;
+}
+
+.meal-tag {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag-vegetarian {
+  background-color: #51cf66;
+}
+
+.tag-vegan {
+  background-color: #94d82d;
+}
+
+.tag-paleo {
+  background-color: #ffd43b;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-section .fas {
+  color: #a3001a;
+  font-size: 2.4rem;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6.4rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.diets-heading {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+/* DELICIOUS SECTION */
+.delicious-section {
+  background-color: #2e415f;
+  padding: 4rem 3.2rem;
+}
+
+.delicious-section .about-heading {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.delicious-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.8rem;
+}
+
+.delicious-container img {
+  width: 100%;
+  border-radius: 1.8rem;
+  /* opacity: .5; */
+  filter: grayscale(0.4);
+}
+
+.delicious-heading {
+  margin-bottom: 2.8rem;
+  font-size: 3rem;
+  color: #fff;
+  word-spacing: -2px;
+}
+
+.delicious-text {
+  color: #fff;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #599ad3;
+  padding: 4rem 3.2rem;
+}
+
+.footer h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.footer p {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.footer-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  font-size: 3rem;
+  transition: all 0.3s;
+  /* background-color: #fff; */
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  transform: translateY(10px);
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.507);
+}
+
+.footer .fa-circle-right {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-right: 5px;
+  display: none;
+}
+
+.footer li:hover .fa-circle-right {
+  display: inline-block;
+}
+
+.footer li:hover {
+  transform: translateX(10px);
+}
+
+.footer li {
+  transition: all 1s;
+}
+
+/* MOBILE */
+.fa-times {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-heading {
+    font-size: 4.8rem;
+    line-height: 1;
+    /* margin-bottom: 1rem; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid-3-cols {
+    display: block;
+    gap: 4rem;
+  }
+
+  .delicious-container {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .delicious-heading {
+    margin: 2rem 0;
+  }
+
+  .box {
+    padding: 30px 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .hero-heading {
+    font-size: 4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  /* FOR THE HAMURGER */
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    flex-direction: column;
+    background-color: #2e415f;
+    width: 60%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100;
+  }
+
+  .nav-bar ul li {
+    border-bottom: 1px solid #808080;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-container {
+    width: 85%;
+  }
+
+  .delivered-meals {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meal-section .meal-heading {
+    font-size: 2.4rem;
+  }
+
+  .diets-heading {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+  }
+}
